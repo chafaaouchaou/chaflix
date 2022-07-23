@@ -100,3 +100,46 @@ a{text-decoration: none;
     }
     
 }
+
+/* badges */
+
+.badges{
+    border-radius: 35px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 200px;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+    width:fit-content;
+
+}
+
+.badges__small{
+    font-size: 1.6rem;
+}
+
+
+
+.badges--primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+
+.badges--secondary{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+    .badges{
+        font-size: 1.5rem;
+    }
+    .badges__small{
+        font-size: 1.2rem;
+
+    }
+}
