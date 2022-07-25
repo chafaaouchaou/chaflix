@@ -3,10 +3,6 @@
 
 }
 
-
-
-
-
 /* Topograthie */
 
 html{
@@ -18,6 +14,7 @@ html{
     --color-accent:#ff3400;
     --color-headings:#1b0760;
     --color-body: #918ca4;
+    --color-border:#ccc;
 }
 body{
     font-family:'Inter', sans-serif;
@@ -46,7 +43,6 @@ h3{
 p{
     margin-top: 0;
 }
-
 
 
 @media screen and (min-width:1024px) {
@@ -281,7 +277,7 @@ a{text-decoration: none;
 .input{
     border-radius: 30px;
     padding: 1.5rem 3.5rem;
-    border: 1px solid  #ccc;
+    border: 1px solid  var(--color-border);
     font-size: 2rem;
     /* width: 100%; */
     outline: 0;
@@ -296,4 +292,25 @@ a{text-decoration: none;
     .input{
         font-size: 1.5rem;
     }    
+}
+
+/* groupe-search */
+
+.groupe-search{
+    border: 1px solid  var(--color-border);
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+
+}
+.groupe-search .input{
+    flex-grow: 1;
+    border: none;
+    padding-left: 1rem;
+    
+}
+
+.groupe-search .button{
+    margin:4px 0;
+    
 }
