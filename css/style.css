@@ -19,10 +19,11 @@ html{
 body{
     font-family:'Inter', sans-serif;
     color:var(--color-body) ;
-    font-size: 2.4rem; 
+    font-size: 2.5rem; 
     line-height: 1.5;
 
 }
+p{margin: 0;}
 h1,h2,h3{
     color:var(--color-headings) ;
     margin-bottom: 1rem;
@@ -112,10 +113,10 @@ a{text-decoration: none;
     border-radius: 35px;
     font-size: 2rem;
     font-weight: 600;
-    margin: 200px;
     padding: 0.5rem 2rem;
     white-space: nowrap;
-    width:fit-content;
+    /* width:fit-content;  */
+   
 
 }
 
@@ -229,7 +230,7 @@ a{text-decoration: none;
     color:var(--color-headings);
     background-color: rgb(255, 255, 255);
 }
-.button--prymary:hover{
+.button--primary:hover{
     border-color: var(--color-headings);
     color:white;
     background-color:var(--color-headings);
@@ -279,7 +280,6 @@ a{text-decoration: none;
     padding: 1.5rem 3.5rem;
     border: 1px solid  var(--color-border);
     font-size: 2rem;
-    /* width: 100%; */
     outline: 0;
     color: var(--color-headings);
 
@@ -316,43 +316,12 @@ a{text-decoration: none;
 }
 
 /* cards */
-/* 
-.card{
-    border-radius: 5px;
-    box-shadow: 0 0 25px rgb(211, 195, 195);
- 
-    margin: 1rem;
-    width:25%;
-}
-
-.card--haid{
-    background-color:var(--color-secondary);  
-    border-top-right-radius :5px;
-    border-top-left-radius : 5px;
-    padding: 20px 0px 1px 30px ;
-
-    
-}
-
-.Card-Title{
-    color: white;
-    
-}
-
-.card--footer{
-    padding: 2rem;
- 
-
-
-} */
-
 
 .card{
     border-radius: 5px;
     box-shadow: 0 0 25px rgb(211, 195, 195);
-    margin: 1rem;
-    width:25%;
     overflow: hidden;
+
 }
 
 .card--haid,.card--footer{
@@ -370,3 +339,86 @@ a{text-decoration: none;
     background: var(--color-secondary);
     color: #fff;
   }
+
+  /* plans */
+
+
+
+.plan-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+
+.plan--price{
+    font-size: 6rem;
+    margin-bottom: 0;
+    margin-right: 0.2rem;
+    
+}
+.plan--month{
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.5;
+    font-weight: 300;
+}
+.plan .description{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.plan-row  .badges{
+    /* max-height:3.4rem; */
+    margin-bottom: 2rem;
+   
+}
+
+
+.plan--primary  .badges{
+
+    background-color:#026efc;
+}
+
+.plan--secondary .badges{
+
+    background-color:#00c9ec;
+}
+.plan--primary .card--haid{
+    display: relative;
+}
+
+.plan--primary .card--haid::before{
+    content: url(../images/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 5%;
+
+}
+
+
+@media screen and (min-width:1024px) {
+
+.plan-title{
+    font-size: 1.4rem;
+
+}
+    
+.plan--price{
+    font-size: 5rem;
+    
+    
+}
+.plan--month{
+    font-size: 1.6rem;
+}
+.plan .description{
+    font-size: 1.7rem;
+}
+
+}
