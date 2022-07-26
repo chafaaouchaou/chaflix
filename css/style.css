@@ -498,3 +498,21 @@ a{text-decoration: none;
     }
     
 }
+
+
+/* grid */
+
+.grid{
+    display: grid;
+}
+@media screen and (min-width:786px){
+   .gride__1x2{
+    grid-template-columns:repeat(2,1fr);
+   }
+}
+
+@media screen and (min-width:1024px){
+    .gride__1x3{
+     grid-template-columns:repeat(3,1fr);
+    }
+ }
