@@ -608,3 +608,45 @@ a{text-decoration: none;
      }
     
  }
+ /* Colabsible */
+
+ .collapsible--haider{
+    display: flex;
+    justify-content: space-between;
+    
+
+ }
+ .collapsible--title{
+    margin-top: 0;
+ }
+
+.collapsible--img{
+
+    width: 40px;
+    height: 40px;
+    transform: rotate(90deg);
+}
+
+/* .collapsible--body{
+    max-height: 0;
+    overflow: hidden;
+} */
+/* 
+.collapsible--expanded .collapsible--body{
+   
+    max-height: 100vh;
+    display: block;
+}
+
+.collapsible--expanded .collapsible--img{ 
+    transform: rotate(0);
+} */
+
+
+.collapsible{
+    display: none;
+}
+
+.collapsible--expanded{
+    display: block;
+}
