@@ -627,11 +627,11 @@ a{text-decoration: none;
     transform: rotate(90deg);
 }
 
-/* .collapsible--body{
+.collapsible--body{
     max-height: 0;
     overflow: hidden;
-} */
-/* 
+}
+
 .collapsible--expanded .collapsible--body{
    
     max-height: 100vh;
@@ -640,13 +640,5 @@ a{text-decoration: none;
 
 .collapsible--expanded .collapsible--img{ 
     transform: rotate(0);
-} */
-
-
-.collapsible{
-    display: none;
 }
 
-.collapsible--expanded{
-    display: block;
-}
