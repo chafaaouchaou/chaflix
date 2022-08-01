@@ -28,7 +28,7 @@ p{margin: 0;}
 h1,h2,h3{
     color:var(--color-headings) ;
     margin-bottom: 1rem;
-
+    line-height: 1;
 }
 
 h1{
@@ -540,7 +540,7 @@ a{text-decoration: none;
     right: -32px;
     top: 3rem;
  }
- @media screen and (max-width:785px) {
+ @media screen and (max-width:786px) {
 
     .testimoniel .icon-container{
         right: 5px;
@@ -549,7 +549,7 @@ a{text-decoration: none;
     
  }
 
- @media screen and (min-width:768px) {
+ @media screen and (min-width:786px) {
     .testimoniel .quote--text{
         font-size: 2rem;
     }
@@ -590,7 +590,7 @@ a{text-decoration: none;
     margin-bottom: 3rem;
  }
 
- @media screen and (min-width:768px) {
+ @media screen and (min-width:786px) {
 
     .callout{
         flex-direction: row;
@@ -669,7 +669,7 @@ a{text-decoration: none;
 
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0 1%, 100% 0, 100% 81%, 0 100%); 
+    clip-path: polygon(0 0%, 100% 0, 100% 81%, 0 100%); 
  }
  .container {
     max-width: 1140px;
@@ -726,7 +726,7 @@ transition: color .1s;
 
 
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:786px) {
 
     .nav--icon{
         display:none;
@@ -755,5 +755,36 @@ transition: color .1s;
 .nav--img{
     transform: translateY(20px);
 }
+    
+}
+
+/* Hero */
+
+.hero--img{
+    width: 100%;
+    padding-bottom: 13rem;
+}
+
+.hero--text{
+    margin-bottom: 3rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+}
+
+
+.hero--skewed{
+
+  
+    clip-path: polygon(0 0%, 100% 0, 100% 90%, 0 100%); 
+
+}
+@media screen and (min-width:786px) {
+   
+    .hero-header{
+        padding-left: 5rem;
+        align-self: center;
+
+        text-align: start;
+    }
     
 }
