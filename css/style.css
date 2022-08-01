@@ -230,6 +230,12 @@ a{text-decoration: none;
     margin: 1rem 0;
 }
 
+.button .icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
 .button--primary{
     padding: 1.6rem 9rem;
     letter-spacing: -1px;
@@ -309,17 +315,21 @@ a{text-decoration: none;
     display: flex;
     flex-direction: row;
     border-radius: 30px;
+    width: fit-content;
 
 }
 .groupe-search .input{
     flex-grow: 1;
     border: none;
-    padding-left: 1rem;
+    padding: 1.5rem 2rem;
+    width: 50%;
     
 }
 
 .groupe-search .button{
-    margin:4px 0;
+    margin:4px 4px;
+    /* height: 60px; */
+
     
 }
 
@@ -523,6 +533,16 @@ a{text-decoration: none;
      grid-template-columns:repeat(3,1fr);
     }
  }
+
+ 
+@media screen and (max-width:768px) {
+
+    .grid3aks1x2{
+        grid-template-columns:repeat(2,1fr);
+
+    }
+    
+}
 
  /* Testimoniels */
 
@@ -788,3 +808,54 @@ transition: color .1s;
     }
     
 }
+
+/* Domain Block */
+
+.domain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.domain__item{
+    margin: 0 2rem 2rem 0;
+}
+
+
+
+.domain--list{
+    width: 100%;
+}
+
+.domain--text{
+    font-size:2rem;
+    margin-bottom: 4rem;
+}
+
+.domain--searshbar{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+}
+
+
+.domain--searshbar .button{
+    padding: 0rem 2rem; 
+    height: 6rem;
+}
+
+
+@media screen and (min-width:768px) {
+    .domain--list ,.partleft ,.partright{
+        display: flex;
+    }
+
+    .domain--list{
+        width: auto;
+    }
+    .domain--list .badges{
+        font-size: 1.8rem;
+    }
+    
+}
+
