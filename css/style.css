@@ -414,8 +414,8 @@ a{text-decoration: none;
     width: 40px;
     display: inline-block;
     position: absolute;
-    top: -6px;
-    right: 5%;
+    /* top: -6px;
+    right: 5%; */
 
 }
 
@@ -437,6 +437,9 @@ a{text-decoration: none;
 }
 .plan .description{
     font-size: 1.7rem;
+}
+.plan .list__item {
+    font-size: 2rem;
 }
 
 }
@@ -859,3 +862,51 @@ transition: color .1s;
     
 }
 
+/* plan block */
+
+
+.plan--block{
+    width: fit-content;
+    justify-self: center;
+    margin: 4rem 2rem;
+    transition: transform .3s;
+
+}
+
+
+
+
+.plan--primary .card--haid::before{
+   
+    transform: translate(29rem,-3rem);
+}
+
+
+
+.plan--block:hover{
+    transform:scale(105%);
+}
+
+
+.plan--primary{
+    transform:scale(110%) ;
+    overflow: hidden;
+}
+
+.plan--primary:hover{
+    transform:scale(115%) ;
+    
+}
+
+
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    .plan--primary .card--haid::before{
+   
+        transform: translate(24rem,-3rem);
+    }
+}
