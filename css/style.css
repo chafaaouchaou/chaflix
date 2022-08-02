@@ -16,6 +16,7 @@ html{
     --color-body: #918ca4;
     --color-border:#ccc;
     --color-body-darker:#5c5577;
+
 }
 body{
     font-family:'Inter', sans-serif;
@@ -677,7 +678,7 @@ a{text-decoration: none;
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
   }
-.block__header {
+.block__header{
     text-align: center;
 }
 .block__heading {
@@ -693,7 +694,7 @@ a{text-decoration: none;
 
 .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
@@ -949,4 +950,38 @@ transition: color .1s;
 
 .feature--header{
     margin-bottom: 6rem;
+}
+
+/* showcase block */
+
+
+.showcase--img{
+    width: 100%;
+}
+.showcase p{
+    color: white;
+}
+.showcase .list--item{
+    margin-bottom: 3rem;
+    border: 0;
+}
+.showcase  .media--title{
+    font-weight: 400;
+}
+.showcase  .media--text{
+color: rgb(124, 124, 124);
+}
+
+.showcase{
+    padding-bottom: 5rem;
+}
+
+@media screen and (min-width:786px) and (max-width:1024px) {
+    .showcase p{
+        font-size: 2.4rem;    }
+    .showcase  .media--text{
+        font-size: 2rem ;        
+    }
+        
+    
 }
