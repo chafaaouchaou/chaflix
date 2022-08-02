@@ -30,6 +30,7 @@ h1,h2,h3{
     color:var(--color-headings) ;
     margin-bottom: 1rem;
     line-height: 1;
+    margin-top: 14rem;
 }
 
 h1{
@@ -182,9 +183,14 @@ a{text-decoration: none;
 @media screen and (min-width:1024px) {
 
     .list-tick .list__item{
-
         padding-left:0;
 }
+}
+@media screen and (max-width:430px) {
+    .list__item__text{
+        font-size: 1.5rem;
+    }
+    
 }
 
 /* Icons */
@@ -244,7 +250,7 @@ a{text-decoration: none;
     vertical-align: middle;
 }
 .button--primary{
-    padding: 1.6rem 9rem;
+    padding: 1.6rem 0rem;
     letter-spacing: -1px;
 
     border-color: var(--color-headings);
@@ -373,6 +379,7 @@ a{text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 
@@ -611,9 +618,11 @@ a{text-decoration: none;
     font-size: 2rem;
     border-radius: 5px;
     text-align: center;
+    margin: 0 auto;
  }
  .callout--title{
     color: white;
+    margin-top: 4rem;
  }
 
  .callout--body{
@@ -648,6 +657,7 @@ a{text-decoration: none;
  }
  .collapsible--title{
     margin-top: 0;
+    color: white;
  }
 
 .collapsible--img{
@@ -716,6 +726,9 @@ a{text-decoration: none;
     flex-wrap: wrap;
     background-color: black;
     padding: 0 1rem;
+     margin-bottom: -10px; /* I added this two propretier in order to hide a ligne  */
+    box-sizing: border-box; /*which apear to separate thenav_bar and the hero_block*/
+
 }
 
 
@@ -765,7 +778,7 @@ transition: color .1s;
     }
 
 
-    .list--item>a{   
+    .list--item a{   
         font-size: 2rem;
 
 }
@@ -795,6 +808,10 @@ transition: color .1s;
 .hero--img{
     width: 100%;
     padding-bottom: 13rem;
+}
+
+.hero--h1{
+    margin-top: 2rem;
 }
 
 .hero--text{
@@ -831,7 +848,7 @@ transition: color .1s;
 }
 
 .domain__item{
-    margin: 0 2rem 2rem 0;
+    margin: 0 1rem 1rem 0;
 }
 
 
@@ -860,6 +877,7 @@ transition: color .1s;
 @media screen and (min-width:768px) {
     .domain--list ,.partleft ,.partright{
         display: flex;
+        justify-content: center;
     }
 
     .domain--list{
@@ -875,7 +893,7 @@ transition: color .1s;
 
 
 .plan--block{
-    width: fit-content;
+    /* width: 200px; */
     justify-self: center;
     margin: 4rem 2rem;
     transition: transform .3s;
@@ -890,6 +908,18 @@ transition: color .1s;
     transform: translate(29rem,-3rem);
 }
 
+@media screen and (max-width:380px) {
+    .plan--primary .card--haid::before{
+   
+        transform: translate(24rem,-3rem);
+    }
+}
+@media screen and (max-width:350px) {
+    .plan--primary .card--haid::before{
+   
+        transform: translate(20rem,-3rem);
+    }
+}
 
 
 .plan--block:hover{
@@ -907,7 +937,13 @@ transition: color .1s;
     
 }
 
+/* /////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width:630) {
+    .plan .badges{width: 100%;}
+    .button--plan{padding: 0;}
+   
 
+}
 
 
 
@@ -917,6 +953,9 @@ transition: color .1s;
     .plan--primary .card--haid::before{
    
         transform: translate(24rem,-3rem);
+    }
+    .plan{
+        margin-top: 15rem;
     }
 }
 
@@ -989,3 +1028,95 @@ color: rgb(124, 124, 124);
 }
 /* testimoniel */
 
+/* footer */
+
+.footer{
+    padding: 2rem;
+    line-height: 1;
+    font-size: 2rem;
+}
+.footer--dark{
+    background-color: #262627;
+}
+
+.footer .list--item{
+    border: 0;
+    
+
+}
+.footer-list{
+    border-bottom: 1px solid rgb(59, 58, 57);
+}
+
+.footer-list:last-child{
+    padding-bottom: 2rem;
+}
+.logocopy{
+    line-height: 1.4;
+    height: fit-content;
+    border-radius: 6px;
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid beige;
+    text-align: center;
+    color: #6a6c6d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+.logocopy h3{
+    color: rgb(146, 145, 145);
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.logocopy p{
+    margin: 1rem 2rem 1.4rem 2rem;
+    font-size: 1.4rem;
+
+}
+
+
+
+@media screen and (min-width:786px) {
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+    .footer-element{
+        margin-right: 2rem;
+        white-space: nowrap;
+
+        
+    }
+    .footer-element .collapsible--img{
+        display: none;
+    }
+    .footer-element .collapsible--title{
+        font-size: 1.8rem;
+    }
+    .footer-element .list--item--link{
+        font-size: 1.6rem ;
+    }
+    .footer-list{      
+          border: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
+    }
+
+    .logocopy{
+        margin-right: 7rem;
+        margin-left: 4rem;
+        order: -1;
+    }
+    .footer-list:last-child{
+        padding-bottom: 0rem;
+    }
+
+   
+}
+
+/* TODO: CONSIDER REFACTORINT THE WIDTH OF THE IMAGES IN ONE PLACE 
+img{width:100%;}*/
