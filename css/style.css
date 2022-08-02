@@ -1027,6 +1027,10 @@ color: rgb(124, 124, 124);
     
 }
 /* testimoniel */
+.testimoniel--section{
+    max-width: 824px;
+    margin: 0 auto;
+}
 
 /* footer */
 
